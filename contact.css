@@ -1,0 +1,57 @@
+:root{
+    --safferBlue: rgb(0,165,228);
+    --backgroundColor: rgb(32, 28, 28);
+}
+
+body {
+    background-color:var(--safferBlue);
+}
+
+p {
+
+}
+
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: left;
+    color: black;
+    text-align: left;
+    text-decoration: underline;
+    
+}
+h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: left;
+    font-family: sans; color: black;
+
+    
+}
+h3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: left;
+    color: black;
+}
+.center {
+    display: inline-block; 
+
+}
+.center div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.card{
+    margin-top: 20%;
+    margin-left: 10%;
+}
