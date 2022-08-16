@@ -1,0 +1,36 @@
+:root{
+    --safferBlue: rgb(0,165,228);
+    --backgroundColor: rgb(32, 28, 28);
+}
+
+body {
+    background-color:var(--safferBlue);
+    font-size: 4vh;
+}
+
+
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+}
+
+.centeredList{
+    display: inline-block;
+    text-align: left;
+}
+
+button {
+    border: none;
+    transition-duration: 0.5s;
+
+}
+img:hover {
+    background-color: white; /* Green */
+    color: var(--safferBlue);
+    border: 2pt solid var(--safferBlue);
+}
+
+
