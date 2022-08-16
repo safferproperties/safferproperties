@@ -7,17 +7,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="homeButton.css">
     <link rel="stylesheet" href="propertyList.css">
+    <link rel="stylesheet" href="homeButton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .home button{
+            background-color: rgb(0,165,228); /* Blue background */
+        }
+        .home button:hover {
+            background-color: white; /* Green */
+            color: var(--backgroundColor);
+            border: 2pt solid var(--safferBlue);
+        }
+    </style>
 </head>
 <body>
+    <div class="home">
+        <button class="btn" onclick="window.location.href='index.html'"><i class="fa fa-home"></i></button>
+    </div>
     <div class="center">
     <h1>Properties</h1>
     <ul class="centeredList">
         <li><a href="properties/607.html">607 N Illinois St</a></li>
         <li><a href="properties/818.html">818 N Harrison St</a></li>
         <li><a href="properties/2223.html">2223 N Nottingham Street</a></li>
-        <li><a href="properties/2223.html">2309 N Madison St</a></li>
-        <li><a href="properties/2223.html">2317 N Madison</a></li>
-        <li><a href="properties/2223.html">2410 N Madison</a></li>
+        <li><a href="properties/2309.html">2309 N Madison St</a></li>
+        <li><a href="properties/2317.html">2317 N Madison</a></li>
+        <li><a href="properties/2410.html">2410 N Madison</a></li>
         <li><a href="properties/2223.html">2412 N Madison St</a></li>
         <li><a href="properties/2223.html">2412 N Madison St</a></li>
         <li><a href="properties/2223.html">3216 N Pershing Drive</a></li>

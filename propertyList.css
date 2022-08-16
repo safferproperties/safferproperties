@@ -4,8 +4,9 @@
 }
 
 body {
-    background-color:var(--safferBlue);
+    background-color:var(--backgroundColor);
     font-size: 4vh;
+    color: var(--safferBlue);
 }
 
 
@@ -28,9 +29,12 @@ button {
 
 }
 img:hover {
-    background-color: white; /* Green */
+    background-color: white; 
     color: var(--safferBlue);
     border: 2pt solid var(--safferBlue);
+}
+a{
+    color: var(--safferBlue);
 }
 
 
