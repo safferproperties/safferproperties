@@ -5,10 +5,7 @@ const swiper = new Swiper('.swiper', {
   centerSlides: true,
   loop: true,
   grabCursor: true,
-  autoplay: {
-      delay: 6000,
-      disableOnInteraction: true,   
-  },
+
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
