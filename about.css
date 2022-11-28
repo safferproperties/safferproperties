@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color:var(--safferBlue);
+    background-color:var(--backgroundColor);
 }
 
 p {
@@ -13,6 +13,7 @@ p {
     margin-right: auto;
     width: 60%;
     text-align: left;
+    color: white;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h1 {
     margin-right: auto;
     width: 60%;
     text-align: left;
-    color: black;
+    color: white;
     text-align: left;
     text-decoration: underline;
     
@@ -32,7 +33,7 @@ h2 {
     margin-right: auto;
     width: 60%;
     text-align: left;
-    font-family: sans; color: black;
+    font-family: sans; color: white;
 
     
 }
@@ -42,7 +43,7 @@ h3 {
     margin-right: auto;
     width: 60%;
     text-align: left;
-    color: black;
+    color: white;
 }
 .center {
     display: inline-block; 
