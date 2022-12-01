@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testHomePage.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <nav id="navBar">
+            <img src="upscaler-SAFFER (1)-2x.jpg" class="logo" id="logo">
+            <ul id="menu">
+                <li>About Us</li>
+                <li>Managed Properties</li>
+                <li>Contact</li>
+                <li>Rental Application</li>
+                
+            </ul>
+        </nav>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.\n\n\n\n Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.\n\n\n\n Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.\n\n\n\n Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.\n\n\n\n Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.\n\n\n\n Nisi asperiores eius aliquid aperiam eligendi deleniti incidunt ab fugit autem praesentium reprehenderit est sed ducimus, itaque ratione. Harum minima ipsam labore!</p>
+
+
+    <script>
+        var navBar = document.getElementById("navBar")
+        var menu = document.getElementById("menu")
+        var logo = document.getElementById("logo")
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navBar.classList.add("sticky")
+                logo.classList.add("small")
+            }
+            else {
+                navBar.classList.remove("sticky")
+                logo.classList.remove("small")
+            }
+        }
+    </script>
+
+
+</body>
+</html>

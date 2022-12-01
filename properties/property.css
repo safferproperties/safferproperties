@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* body {
+    padding-bottom: 50pt;
+} */
+
 .container{
     width: 100%;
     height: 100vh;
@@ -83,21 +87,19 @@ body {
 /* Set the size of the div element that contains the map */
 .map{
     position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
+    padding-bottom: 70%; 
+    height: 30%;
     overflow: hidden;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
-.map iframe {
+.map iframe{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw !important;
-    height: 100vh !important;
-    
+    width: 100% !important;
+    height: 100% !important;
 }
+
 
 .float-container {
     padding: 20px;
