@@ -1,0 +1,106 @@
+:root{
+    --safferBlue: rgb(0,165,228);
+    --backgroundColor: rgb(32, 28, 28);
+}
+.back{
+    position: sticky;
+    display: inline-block;
+    /*float: right;*/
+    right: 0;
+    height: 0;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    
+}
+.back button{
+    background-color: var(--safferBlue); /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+.back button:hover {
+    background-color: white; /* Green */
+    color: var(--backgroundColor);
+    border: 2pt solid var(--safferBlue);
+}
+
+.main-container {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+.image-container {
+    display: flex;
+    width: 50%;
+}
+
+.text-container {
+    width: 50%;
+    padding: 0 20px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    text-align: center;
+    font-size: larger;
+}
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+
+.column {
+    width: 50%;
+    margin-right: 5px; /* add margin between the columns */
+}
+
+.column:last-child {
+    margin-right: 0; /* remove margin from the last column */
+}
+
+.text {
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    right: 100vw/2;
+    height: 0;
+    top: 0;
+    z-index: 1;
+    padding: 1%;
+    margin-top: 0pt;
+    text-align: center;
+}
+
+ 
+h2{
+    right: 100vw/2;
+    height: 0;
+    top: 0;
+    z-index: 1;
+    padding: 1%;
+    margin-top: 0pt;
+    text-align: center;
+}
+
+
+  
+
+
+  
