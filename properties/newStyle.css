@@ -83,6 +83,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+.clickable-image:hover {
+    cursor: pointer;
+  }
 
 h1{
     right: 100vw/2;

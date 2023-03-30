@@ -1,7 +1,6 @@
 function showSlider(image) {
     // Get all the img elements on the page
     const images = document.querySelectorAll('img');
-  
     // Extract the src attributes and create an array of image URLs
     const imageUrls = Array.from(images).map(img => ({ src: img.src }));
   
