@@ -11,15 +11,15 @@ body {
     position: sticky;
     display: inline-block;
     /*float: right;*/
-    right: 0;
     height: 0;
     top: 0;
     z-index: 1;
     left: 0;
     width: 100%;
     text-align: right;
-    
+    padding: 1%; 
 }
+
 .back button{
     background-color: var(--safferBlue); /* Blue background */
     border: none; /* Remove borders */
@@ -110,8 +110,28 @@ h2{
     color: white;
 }
 
-
+  
   
 
 
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color: var(--safferBlue); /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+
+    margin: 1%;
+  }
+ 
+.back-button:hover {
+  background-color: white; /* Green */
+  color: var(--backgroundColor);
+  border: 2pt solid var(--safferBlue);
+}
   

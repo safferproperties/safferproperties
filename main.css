@@ -1,10 +1,10 @@
 :root{
     --safferBlue: rgb(0,165,228);
-    --backgroundColor: rgb(32, 28, 28);
+    --backgroundColor: rgb(25,25,24);
 }
 
 body {
-    background-color: rgb(32, 28, 28);
+    background-color: rgb(25,25,24);
     color: white;
 }
 h1 {
@@ -25,6 +25,7 @@ h1 {
 }
 .mainImage img {
     display: block;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -40,7 +41,6 @@ h1 {
 
     transition-duration: 0.2s;
     font-size: larger;
-
 }
 
 .row button:hover {

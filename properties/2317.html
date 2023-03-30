@@ -1,87 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="property.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="homeButton.css">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2317 N Madison St</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="newStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="imageSlider.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="homeButton.css">
 </head>
 <body>
-    <div class="back">
-        <button class="btn" onclick="window.location.href='/propertyList.html'"><i class="fa fa-arrow-left"></i></button>
+<button class="back-button" onclick="window.location.href='/propertyList.html'"><i class="fa fa-arrow-left"></i></button>
+<h1>2317 N Madison St</h1>
+  <br>
+  <br>
+  <div class="main-container">
+    <div class="image-container">
+      <div class="column">
+        <img src="/data/2317 N Madison 2020/image1.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image3.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image4.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image5.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image7.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image9.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image11.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        
+      </div>
+      <div class="column">
+        <img src="/data/2317 N Madison 2020/image2.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image6.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image8.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image10.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image12.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+        <img src="/data/2317 N Madison 2020/image13.jpg" alt="Image 1" class="clickable-image" onclick="showSlider(this)" />
+      </div>
     </div>
-    <h1>2317 N Madison St</h1>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-8">
-                <!--image gallery start-->
-                <div class="container">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                        <!-- Slides -->
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_1433.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4012.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_3998.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_3999.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4001.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4002.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4003.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4004.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4005.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4006.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4007.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4008.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4009.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="/data/2317 N Madison 2020/IMG_4010.JPG" alt=""></div>
-                            
-            
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
-                    </div>
-                    
-                </div> 
-                <!--image gallery end-->
-            </div>
-            <div class="col-4">
-                <ul>
-                    <li>Great location: Walk to EFC Metro & Westover Village & Library, District Taco, and the new Italian Deli, Close to DC (6 miles), Tyson’s Corner (6 miles), I-66, Rt. 29 </li>
-                    <li>Four bedrooms, three full baths</li>
-                    <li>Updated kitchen, with GE appliances, newer cabinets</li>
-                    <li>Brand new bathroom on the main level</li>
-                    <li>Central a/c, natural gas heat & hot water</li>
-                    <li>Large landscaped yard, great back yard</li>
-                    <li>Original hardwood floors thru out, recently refinished</li>
-                    <li>Established quiet neighborhood</li>
-                    <li>Excellent Schools: Tuckahoe Elementary, Swanson MS, & Yorktown HS</li>
-                    <li>Lease terms: 1 year minimum, no smoking, no use of fire place</li>
-                </ul>
-            </div>
-        </div>
+    <div class="text-container">
+        <ul>
+            <li>Great location: Walk to EFC Metro & Westover Village & Library, District Taco, and the new Italian Deli</li>
+            <li>Close to DC (6 miles), Tyson’s Corner (6 miles), I-66, Rt. 29 </li>
+            <li>Four bedrooms, three full baths</li>
+            <li>Updated kitchen, with GE appliances, newer cabinets</li>
+            <li>Brand new bathroom on the main level</li>
+            <li>Central a/c, natural gas heat & hot water</li>
+            <li>Large landscaped yard, great back yard</li>
+            <li>Original hardwood floors thru out, recently refinished</li>
+            <li>Established quiet neighborhood</li>
+            <li>Excellent Schools: Tuckahoe Elementary, Swanson MS, & Yorktown HS</li>
+            <li>Lease terms: 1 year minimum, no smoking, no use of fire place</li>
+        </ul>
     </div>
-    
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d947.1651967930252!2d-77.14459207076936!3d38.89363484252242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b454167b765d%3A0x279b9af327529fbe!2s2317%20N%20Madison%20St%2C%20Arlington%2C%20VA%2022205!5e1!3m2!1sen!2sus!4v1660755687079!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="/swiper.js"></script>
-    
+  </div>
+
 </body>
 </html>
