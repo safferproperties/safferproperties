@@ -1,8 +1,4 @@
 function showSlider(image) {
-  // Reset page zoom to default
-  document.body.style.zoom = 1;
-
-
   // Get all the img elements on the page
   const images = document.querySelectorAll('img');
   // Extract the src attributes and create an array of image URLs
@@ -25,25 +21,13 @@ function showSlider(image) {
   $.fancybox.open(imageUrls, { index: index });
 }
 
-function isMobileDevice() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
 
-function resetMobileZoom() {
-  // Reset the initial scale for mobile devices
-  const metaTag = document.querySelector('meta[name="viewport"]');
-  if (metaTag) {
-    metaTag.setAttribute('content', 'width=device-width, initial-scale=1');
-  }
-}
 
 const images = document.querySelectorAll('img');
 images.forEach(image => {
   image.addEventListener('click', () => {
-    if (isMobileDevice()) {
-      // Reset page zoom for mobile devices
-      resetMobileZoom();
-    }
     showSlider(image);
   });
 });
+
+
