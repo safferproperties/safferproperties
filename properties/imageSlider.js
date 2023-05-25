@@ -25,9 +25,25 @@ function showSlider(image) {
   $.fancybox.open(imageUrls, { index: index });
 }
 
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
+function resetMobileZoom() {
+  // Reset the initial scale for mobile devices
+  const metaTag = document.querySelector('meta[name="viewport"]');
+  if (metaTag) {
+    metaTag.setAttribute('content', 'width=device-width, initial-scale=1');
+  }
+}
 
 const images = document.querySelectorAll('img');
 images.forEach(image => {
-  image.addEventListener('click', showSlider(this));
+  image.addEventListener('click', () => {
+    if (isMobileDevice()) {
+      // Reset page zoom for mobile devices
+      resetMobileZoom();
+    }
+    showSlider(image);
+  });
 });
