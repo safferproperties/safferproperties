@@ -1,4 +1,8 @@
 function showSlider(image) {
+  // Reset page zoom to default
+  document.body.style.zoom = 1;
+
+
   // Get all the img elements on the page
   const images = document.querySelectorAll('img');
   // Extract the src attributes and create an array of image URLs
@@ -15,7 +19,6 @@ function showSlider(image) {
     // Compare the file names in ascending order
     return numberA - numberB;
   });
-  console.log(imageUrls)
   // Find the index of the clicked image in the sorted array
   const index = imageUrls.findIndex(img => img.src === image.src);
   // Open the fancybox with all the images starting from the clicked image
